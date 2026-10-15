@@ -57,6 +57,7 @@ export const techStack: { key: StackGroupKey; items: StackItem[] }[] = [
       { name: "NestJS", icon: "nestjs" },
       { name: "Node.js", icon: "nodedotjs" },
       { name: "TypeORM", icon: "typeorm" },
+      { name: "Prisma", icon: "prisma", mono: true },
       { name: "Drizzle ORM", icon: "drizzle" },
       { name: "RESTful API" },
       { name: "GraphQL", icon: "graphql" },
@@ -76,6 +77,8 @@ export const techStack: { key: StackGroupKey; items: StackItem[] }[] = [
     key: "devops",
     items: [
       { name: "Docker", icon: "docker" },
+      { name: "Nginx", icon: "nginx" },
+      { name: "Jenkins", icon: "jenkins" },
       { name: "Turborepo", icon: "turborepo" },
       { name: "Vitest", icon: "vitest" },
       { name: "Jest", icon: "jest" },
