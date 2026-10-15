@@ -1,24 +1,13 @@
 "use client";
 
+import Link from "next/link";
 import { profile, techStack, type StackItem } from "@/config/profile";
+import { getContactLinks, githubUrl } from "@/lib/contact-links";
 import { locales } from "@/i18n/dictionary";
 import { useLanguage } from "./language-provider";
 import { Typewriter } from "./typewriter";
 
-const githubUrl = `https://github.com/${profile.githubUsername}`;
 const statsTheme = "theme=merko&hide_border=true&border_radius=12";
-
-// Only contacts with a value are rendered; GitHub is always present.
-function useContactLinks() {
-  const { email, linkedin, facebook } = profile.contacts;
-  const stripProtocol = (url: string) => url.replace(/^https?:\/\/(www\.)?/, "");
-  return [
-    { label: "GitHub", href: githubUrl, value: `@${profile.githubUsername}` },
-    email && { label: "Email", href: `mailto:${email}`, value: email },
-    linkedin && { label: "LinkedIn", href: linkedin, value: stripProtocol(linkedin) },
-    facebook && { label: "Facebook", href: facebook, value: stripProtocol(facebook) },
-  ].filter(Boolean) as { label: string; href: string; value: string }[];
-}
 
 function SectionHeading({ index, title, subtitle }: { index: string; title: string; subtitle?: string }) {
   return (
@@ -84,7 +73,7 @@ function AboutCode() {
 
 export function Portfolio() {
   const { locale, setLocale, t } = useLanguage();
-  const contacts = useContactLinks();
+  const contacts = getContactLinks();
 
   return (
     <>
@@ -145,6 +134,12 @@ export function Portfolio() {
                 >
                   {t.hero.cta}
                 </a>
+                <Link
+                  href="/play/"
+                  className="flex items-center gap-2 rounded-md border border-accent/60 bg-accent/10 px-5 py-2.5 text-sm font-semibold text-accent transition-colors hover:bg-accent/20"
+                >
+                  🎮 {t.hero.play}
+                </Link>
                 <a
                   href={githubUrl}
                   target="_blank"

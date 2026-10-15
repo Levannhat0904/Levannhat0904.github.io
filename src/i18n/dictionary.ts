@@ -6,12 +6,20 @@ export const locales: Locale[] = ["en", "vi"];
 
 type Dictionary = {
   nav: { about: string; stack: string; contact: string };
-  hero: { greeting: string; roles: string[]; tagline: string; cta: string };
+  hero: { greeting: string; roles: string[]; tagline: string; cta: string; play: string };
   about: { title: string; paragraphs: string[] };
   stack: { title: string; subtitle: string; groups: Record<StackGroupKey, string> };
   stats: { title: string; subtitle: string };
   contact: { title: string; subtitle: string };
   footer: string;
+  game: {
+    back: string;
+    hint: string;
+    hintTouch: string;
+    reset: string;
+    noWebgl: string;
+    zones: Record<"about" | "stack" | "contact", string>;
+  };
 };
 
 export const dictionary: Record<Locale, Dictionary> = {
@@ -23,6 +31,7 @@ export const dictionary: Record<Locale, Dictionary> = {
       tagline:
         "I build web, mobile and backend products end to end, mostly with TypeScript and Go.",
       cta: "Get in touch",
+      play: "Play the 3D game",
     },
     about: {
       title: "About me",
@@ -49,6 +58,14 @@ export const dictionary: Record<Locale, Dictionary> = {
       subtitle: "Open to new opportunities and collaborations.",
     },
     footer: "Built with Next.js & Tailwind CSS.",
+    game: {
+      back: "Classic portfolio",
+      hint: "WASD / arrow keys to drive · Space to brake · R to reset. Drive into the glowing rings!",
+      hintTouch: "Use the buttons to drive. Drive into the glowing rings!",
+      reset: "Reset",
+      noWebgl: "Your browser does not support WebGL, so the game cannot run.",
+      zones: { about: "About me", stack: "Tech stack", contact: "Contact" },
+    },
   },
   vi: {
     nav: { about: "Giới thiệu", stack: "Công nghệ", contact: "Liên hệ" },
@@ -58,6 +75,7 @@ export const dictionary: Record<Locale, Dictionary> = {
       tagline:
         "Tôi xây dựng sản phẩm web, mobile và backend trọn vẹn, chủ yếu với TypeScript và Go.",
       cta: "Liên hệ với tôi",
+      play: "Chơi game 3D",
     },
     about: {
       title: "Về tôi",
@@ -84,5 +102,13 @@ export const dictionary: Record<Locale, Dictionary> = {
       subtitle: "Sẵn sàng cho các cơ hội và hợp tác mới.",
     },
     footer: "Xây dựng với Next.js & Tailwind CSS.",
+    game: {
+      back: "Bản portfolio thường",
+      hint: "WASD / phím mũi tên để lái · Space để phanh · R để đặt lại. Hãy lái vào các vòng sáng!",
+      hintTouch: "Dùng các nút để lái. Hãy lái vào các vòng sáng!",
+      reset: "Đặt lại",
+      noWebgl: "Trình duyệt của bạn không hỗ trợ WebGL nên không thể chạy game.",
+      zones: { about: "Giới thiệu", stack: "Công nghệ", contact: "Liên hệ" },
+    },
   },
 };
