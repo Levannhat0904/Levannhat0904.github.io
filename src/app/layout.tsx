@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Lê Văn Nhật · Software Engineer",
   description:
-    "Portfolio of Lê Văn Nhật, a Software Engineer building web, mobile and backend products with TypeScript and Go.",
+    "Portfolio of Lê Văn Nhật, a Software Engineer building web, mobile and backend products with TypeScript.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

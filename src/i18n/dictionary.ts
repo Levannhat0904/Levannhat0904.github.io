@@ -27,16 +27,16 @@ export const dictionary: Record<Locale, Dictionary> = {
     nav: { about: "About", stack: "Tech stack", contact: "Contact" },
     hero: {
       greeting: "Hi, I'm",
-      roles: ["Software Engineer", "Web • Mobile • Backend", "TypeScript & Go enthusiast"],
+      roles: ["Software Engineer", "Web • Mobile • Backend", "TypeScript enthusiast"],
       tagline:
-        "I build web, mobile and backend products end to end, mostly with TypeScript and Go.",
+        "I build web, mobile and backend products end to end, mostly with TypeScript.",
       cta: "Get in touch",
       play: "Play the 3D game",
     },
     about: {
       title: "About me",
       paragraphs: [
-        "I'm a software engineer who enjoys turning ideas into products that people actually use. My day-to-day work spans React and Next.js frontends, React Native and Flutter mobile apps, and NestJS or Go services backed by PostgreSQL.",
+        "I'm a software engineer who enjoys turning ideas into products that people actually use. My day-to-day work spans React and Next.js frontends, React Native mobile apps, and NestJS services backed by PostgreSQL.",
         "I care about clean, typed code, fast feedback loops with automated tests, and shipping small, reliable increments.",
       ],
     },
@@ -71,16 +71,16 @@ export const dictionary: Record<Locale, Dictionary> = {
     nav: { about: "Giới thiệu", stack: "Công nghệ", contact: "Liên hệ" },
     hero: {
       greeting: "Xin chào, tôi là",
-      roles: ["Kỹ sư phần mềm", "Web • Mobile • Backend", "Yêu thích TypeScript & Go"],
+      roles: ["Kỹ sư phần mềm", "Web • Mobile • Backend", "Yêu thích TypeScript"],
       tagline:
-        "Tôi xây dựng sản phẩm web, mobile và backend trọn vẹn, chủ yếu với TypeScript và Go.",
+        "Tôi xây dựng sản phẩm web, mobile và backend trọn vẹn, chủ yếu với TypeScript.",
       cta: "Liên hệ với tôi",
       play: "Chơi game 3D",
     },
     about: {
       title: "Về tôi",
       paragraphs: [
-        "Tôi là kỹ sư phần mềm, thích biến ý tưởng thành sản phẩm mà người dùng thực sự sử dụng. Công việc hằng ngày của tôi gồm frontend React/Next.js, ứng dụng mobile React Native và Flutter, cùng các dịch vụ NestJS hoặc Go chạy trên PostgreSQL.",
+        "Tôi là kỹ sư phần mềm, thích biến ý tưởng thành sản phẩm mà người dùng thực sự sử dụng. Công việc hằng ngày của tôi gồm frontend React/Next.js, ứng dụng mobile React Native, cùng các dịch vụ NestJS chạy trên PostgreSQL.",
         "Tôi chú trọng code rõ ràng, có kiểu dữ liệu chặt chẽ, kiểm thử tự động để phản hồi nhanh, và phát hành từng phần nhỏ nhưng ổn định.",
       ],
     },

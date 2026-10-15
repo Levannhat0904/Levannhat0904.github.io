@@ -28,7 +28,6 @@ export const techStack: { key: StackGroupKey; items: StackItem[] }[] = [
     items: [
       { name: "TypeScript", icon: "typescript" },
       { name: "JavaScript", icon: "javascript" },
-      { name: "Go", icon: "go" },
       { name: "Dart", icon: "dart" },
     ],
   },
@@ -51,7 +50,6 @@ export const techStack: { key: StackGroupKey; items: StackItem[] }[] = [
     items: [
       { name: "React Native", icon: "react" },
       { name: "Expo", icon: "expo", mono: true },
-      { name: "Flutter", icon: "flutter" },
       { name: "Zalo Mini App", icon: "zalo" },
     ],
   },
@@ -60,7 +58,6 @@ export const techStack: { key: StackGroupKey; items: StackItem[] }[] = [
     items: [
       { name: "NestJS", icon: "nestjs" },
       { name: "Node.js", icon: "nodedotjs" },
-      { name: "Go", icon: "go" },
       { name: "TypeORM", icon: "typeorm" },
       { name: "Drizzle ORM", icon: "drizzle" },
       { name: "NATS", icon: "natsdotio" },

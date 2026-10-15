@@ -56,7 +56,7 @@ function createFaceTexture(item: StackItem) {
 const nearestQuarter = (a: number) => Math.round(a / (Math.PI / 2)) * (Math.PI / 2);
 
 export function createTechBlocks(scene: THREE.Scene) {
-  // One block per technology (Go appears in two groups).
+  // One block per technology, even if it is listed in several groups.
   const items = [...new Map(techStack.flatMap((g) => g.items).map((i) => [i.name, i])).values()];
   const geometry = new THREE.BoxGeometry(SIZE, SIZE, SIZE);
 
