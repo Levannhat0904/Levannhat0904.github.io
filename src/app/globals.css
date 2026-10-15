@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --muted: #5b5b66;
+  --surface: #f6f6f7;
+  --line: #e4e4e7;
+  --accent: #2f9e1e;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-surface: var(--surface);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --font-sans: var(--font-sans-base);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0b;
+    --foreground: #ededed;
+    --muted: #a1a1aa;
+    --surface: #141416;
+    --line: #27272a;
+    --accent: #42bc2a;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+/* Faint grid behind the hero, faded out towards the edges */
+.bg-grid {
+  background-image:
+    linear-gradient(to right, var(--line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--line) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+  opacity: 0.6;
+}
+
+@keyframes wave {
+  0%, 60%, 100% { transform: rotate(0deg); }
+  10%, 30% { transform: rotate(14deg); }
+  20% { transform: rotate(-8deg); }
+  40% { transform: rotate(-4deg); }
+  50% { transform: rotate(10deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
