@@ -42,7 +42,6 @@ export const techStack: { key: StackGroupKey; items: StackItem[] }[] = [
       { name: "Ant Design", icon: "antdesign" },
       { name: "TanStack Query", icon: "reactquery" },
       { name: "Zustand" },
-      { name: "Jotai" },
     ],
   },
   {
