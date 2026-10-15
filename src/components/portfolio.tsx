@@ -43,7 +43,7 @@ function AboutCode() {
   const lines: [string, string][] = [
     ["role", `"${t.hero.roles[0]}"`],
     ["specialty", `"Full-stack (Web • Mobile • Backend)"`],
-    ["languages", `["TypeScript", "JavaScript", "Dart"]`],
+    ["languages", `["TypeScript", "JavaScript"]`],
     ["speaks", `["Vietnamese", "English"]`],
   ];
   return (

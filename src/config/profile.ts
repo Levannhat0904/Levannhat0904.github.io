@@ -28,7 +28,6 @@ export const techStack: { key: StackGroupKey; items: StackItem[] }[] = [
     items: [
       { name: "TypeScript", icon: "typescript" },
       { name: "JavaScript", icon: "javascript" },
-      { name: "Dart", icon: "dart" },
     ],
   },
   {
@@ -59,13 +58,13 @@ export const techStack: { key: StackGroupKey; items: StackItem[] }[] = [
       { name: "Node.js", icon: "nodedotjs" },
       { name: "TypeORM", icon: "typeorm" },
       { name: "Drizzle ORM", icon: "drizzle" },
-      { name: "NATS", icon: "natsdotio" },
     ],
   },
   {
     key: "database",
     items: [
       { name: "PostgreSQL", icon: "postgresql" },
+      { name: "MongoDB", icon: "mongodb" },
       { name: "SQLite", icon: "sqlite" },
       { name: "Supabase", icon: "supabase" },
       { name: "Firebase", icon: "firebase" },
