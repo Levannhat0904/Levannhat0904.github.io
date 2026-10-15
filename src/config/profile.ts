@@ -58,6 +58,8 @@ export const techStack: { key: StackGroupKey; items: StackItem[] }[] = [
       { name: "Node.js", icon: "nodedotjs" },
       { name: "TypeORM", icon: "typeorm" },
       { name: "Drizzle ORM", icon: "drizzle" },
+      { name: "RESTful API" },
+      { name: "GraphQL", icon: "graphql" },
     ],
   },
   {
